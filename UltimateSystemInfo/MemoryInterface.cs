@@ -58,6 +58,7 @@ namespace UltimateSystemInfo
                 case 0x17: outValue = "Undefined 23"; break;
                 case 0x18: outValue = "DDR3"; break;
                 case 0x19: outValue = "FBD2"; break;
+                case 0x20: outValue = "DDR4"; break;
                 default: outValue = "Undefined"; break;
             }
 

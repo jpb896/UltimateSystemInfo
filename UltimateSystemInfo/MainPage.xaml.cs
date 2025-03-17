@@ -39,8 +39,11 @@ namespace UltimateSystemInfo
                .Replace("    ", " ")
                .Replace("  ", " ");
                 CPUName.Text = CPUModel;
+                CPUModelText.Text = CPUModel;
             }
             RAMSize.Text = MemoryInterface.GetRAMAmount();
+            RAMAmountText.Text = MemoryInterface.GetRAMAmount();
+            RAMTypeText.Text = RamType;
         }
 
         private string GetWallpaperPath()

@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UltimateSystemInfo"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="using:CommunityToolkit.WinUI.Controls"
     mc:Ignorable="d"
     Background="Transparent">
 
@@ -59,5 +59,27 @@
                 </Button>
             </StackPanel>
         </Grid>
+        <controls:UniformGrid Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0">
+            <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
+                <StackPanel>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left">CPU</TextBlock>
+                        <TextBlock x:Name="CPUModelText" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
+                <StackPanel>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left">RAM</TextBlock>
+                        <TextBlock x:Name="RAMAmountText" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left">RAM type</TextBlock>
+                        <TextBlock x:Name="RAMTypeText" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </controls:UniformGrid>
     </Grid>
 </Page>
