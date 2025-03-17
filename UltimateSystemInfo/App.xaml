@@ -11,6 +11,21 @@
                 <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
+            <Style
+                x:Key="TransparentButton"
+                BasedOn="{StaticResource DefaultButtonStyle}"
+                TargetType="Button">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderThickness" Value="0" />
+            </Style>
+
+            <Style
+                x:Key="TransparentToggleButton"
+                BasedOn="{StaticResource DefaultToggleButtonStyle}"
+                TargetType="ToggleButton">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderThickness" Value="0" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

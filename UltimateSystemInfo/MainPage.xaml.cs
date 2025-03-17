@@ -3,6 +3,7 @@ using Microsoft.UI.Xaml.Media.Imaging;
 using Microsoft.Win32;
 using System;
 using System.IO;
+using System.Management;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -17,9 +18,29 @@ namespace UltimateSystemInfo
         public MainPage()
         {
             this.InitializeComponent();
-            DeviceName.Text = (string)Microsoft.Win32.Registry.LocalMachine.OpenSubKey("HARDWARE\\DESCRIPTION\\System\\BIOS").GetValue("SystemProductName");
+            var manufacturer = (string)Registry.LocalMachine.OpenSubKey("HARDWARE\\DESCRIPTION\\System\\BIOS").GetValue("SystemManufacturer");
+            var model = (string)Registry.LocalMachine.OpenSubKey("HARDWARE\\DESCRIPTION\\System\\BIOS").GetValue("SystemProductName");
+            DeviceName.Text = model;
             FirmwareType.Text = FirmwareInterface.GetFirmwareTypeAsString();
             Wallpaper.Source =  new BitmapImage(new Uri(GetWallpaperPath()));
+            ManagementObjectSearcher myProcessorObject = new ManagementObjectSearcher("select * from Win32_Processor");
+            var RamType = MemoryInterface.RamType;
+            foreach (ManagementObject obj in myProcessorObject.Get())
+            {
+                var CPUModel = (string)obj["Name"];
+                CPUModel =
+                CPUModel
+               .Replace("(TM)", "™")
+               .Replace("(tm)", "™")
+               .Replace("(R)", "®")
+               .Replace("(r)", "®")
+               .Replace("(C)", "©")
+               .Replace("(c)", "©")
+               .Replace("    ", " ")
+               .Replace("  ", " ");
+                CPUName.Text = CPUModel;
+            }
+            RAMSize.Text = MemoryInterface.GetRAMAmount();
         }
 
         private string GetWallpaperPath()
