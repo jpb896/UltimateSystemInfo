@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "UltimateSystemInfo (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "UltimateSystemInfo (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
