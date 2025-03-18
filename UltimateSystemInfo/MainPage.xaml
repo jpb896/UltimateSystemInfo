@@ -63,7 +63,7 @@
             <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
                 <StackPanel>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left">CPU</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">CPU</TextBlock>
                         <TextBlock x:Name="CPUModelText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                 </StackPanel>
@@ -71,12 +71,40 @@
             <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
                 <StackPanel>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left">RAM</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">RAM</TextBlock>
                         <TextBlock x:Name="RAMAmountText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left">RAM type</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">RAM type</TextBlock>
                         <TextBlock x:Name="RAMTypeText" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
+                <StackPanel>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">OEM</TextBlock>
+                        <TextBlock x:Name="OEMText" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Device</TextBlock>
+                        <TextBlock x:Name="DeviceText" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Firmware type</TextBlock>
+                        <TextBlock x:Name="FirmwareText" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
+                <StackPanel>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Windows edition</TextBlock>
+                        <TextBlock x:Name="WinDesc" HorizontalAlignment="Right">e</TextBlock>
+                    </Grid>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Windows build</TextBlock>
+                        <TextBlock x:Name="WinVer" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                 </StackPanel>
             </Grid>

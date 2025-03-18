@@ -23,9 +23,9 @@ namespace UltimateSystemInfo
             DeviceName.Text = model;
             FirmwareType.Text = FirmwareInterface.GetFirmwareTypeAsString();
             Wallpaper.Source =  new BitmapImage(new Uri(GetWallpaperPath()));
-            ManagementObjectSearcher myProcessorObject = new ManagementObjectSearcher("select * from Win32_Processor");
+            ManagementObjectSearcher ProcessorObject = new ManagementObjectSearcher("select * from Win32_Processor");
             var RamType = MemoryInterface.RamType;
-            foreach (ManagementObject obj in myProcessorObject.Get())
+            foreach (ManagementObject obj in ProcessorObject.Get())
             {
                 var CPUModel = (string)obj["Name"];
                 CPUModel =
@@ -44,6 +44,16 @@ namespace UltimateSystemInfo
             RAMSize.Text = MemoryInterface.GetRAMAmount();
             RAMAmountText.Text = MemoryInterface.GetRAMAmount();
             RAMTypeText.Text = RamType;
+            DeviceText.Text = model;
+            OEMText.Text = manufacturer;
+            FirmwareText.Text = FirmwareInterface.GetFirmwareTypeAsString();
+            ManagementObjectSearcher OperatingSystemObject = new ManagementObjectSearcher("select * from Win32_OperatingSystem");
+
+            foreach (ManagementObject obj in OperatingSystemObject.Get())
+            {
+                WinDesc.Text = (string)obj["Caption"];
+                WinVer.Text = (string)obj["Version"];
+            }
         }
 
         private string GetWallpaperPath()
