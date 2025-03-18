@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
@@ -14,9 +14,12 @@
 	  <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="MainPage.xaml" />
-  </ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="BuildDateAttribute">
+			<_Parameter1>$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -50,6 +53,11 @@
     <Content Update="Assets\monitor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainPage.xaml">

@@ -9,5 +9,18 @@
     mc:Ignorable="d"
     Title="UltimateSystemInfo">
 
-    <Frame x:Name="NavigationFrame"/>
+    <Grid x:Name="rootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TitleBar x:Name="TitleBar" Title="UltimateSystemInfo" Subtitle="v1.0.0" Grid.Row="0">
+            <TitleBar.RightContent>
+                <Button Style="{StaticResource TransparentButton}" Click="Info">
+                    <FontIcon Glyph="&#xE946;" FontSize="12"/>
+                </Button>
+            </TitleBar.RightContent>
+        </TitleBar>
+        <Frame x:Name="NavigationFrame" Grid.Row="1"/>
+    </Grid>
 </Window>

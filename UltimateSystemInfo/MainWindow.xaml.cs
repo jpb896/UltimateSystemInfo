@@ -7,6 +7,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Controls;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -25,6 +26,19 @@ namespace UltimateSystemInfo
             var backdrop = new MicaBackdrop();
             backdrop.Kind = Microsoft.UI.Composition.SystemBackdrops.MicaKind.Base;
             SystemBackdrop = backdrop;
+            ExtendsContentIntoTitleBar = true;
+            SetTitleBar(TitleBar);
+        }
+
+        private async void Info(object sender, RoutedEventArgs e)
+        {
+            About about = new About();
+            ContentDialog aboutdialog = new ContentDialog();
+            aboutdialog.DefaultButton = ContentDialogButton.Primary;
+            aboutdialog.PrimaryButtonText = "OK";
+            aboutdialog.XamlRoot = rootGrid.XamlRoot;
+            aboutdialog.Content = about;
+            await aboutdialog.ShowAsync();
         }
     }
 }
