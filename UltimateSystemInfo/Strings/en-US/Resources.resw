@@ -120,4 +120,43 @@
   <data name="AppName" xml:space="preserve">
     <value>UltimateSystemInfo</value>
   </data>
+  <data name="BuildTime" xml:space="preserve">
+    <value>Built</value>
+  </data>
+  <data name="Contributors.Text" xml:space="preserve">
+    <value>©️ 2025 jpb, contributors</value>
+  </data>
+  <data name="CPUText.Text" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="DeviceName.Text" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="FirmwareType.Text" xml:space="preserve">
+    <value>Firmware type</value>
+  </data>
+  <data name="LicenseNotice.Text" xml:space="preserve">
+    <value>Licensed under the MIT License</value>
+  </data>
+  <data name="OEMName.Text" xml:space="preserve">
+    <value>OEM</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="RAMText.Text" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="RAMTypeText.Text" xml:space="preserve">
+    <value>RAM type</value>
+  </data>
+  <data name="WhatsNew" xml:space="preserve">
+    <value>What's New?</value>
+  </data>
+  <data name="WindowsBuild.Text" xml:space="preserve">
+    <value>Windows build</value>
+  </data>
+  <data name="WindowsEdition.Text" xml:space="preserve">
+    <value>Windows edition</value>
+  </data>
 </root>

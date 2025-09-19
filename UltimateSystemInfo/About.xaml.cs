@@ -11,9 +11,10 @@ namespace UltimateSystemInfo
     {
         public About()
         {
+            string buildTimeDesc = new Microsoft.Windows.ApplicationModel.Resources.ResourceLoader().GetString("BuildTime");
             this.InitializeComponent();
             Assembly assembly = typeof(App).Assembly;
-            CompileDateText.Text = "Built " + GetBuildDate(assembly) + " UTC";
+            CompileDateText.Text = buildTimeDesc + " " + GetBuildDate(assembly) + " UTC";
         }
 
         private static DateTime GetBuildDate(Assembly assembly)

@@ -27,10 +27,6 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
-	<ItemGroup>
-	  <Content Remove="Strings\en-US\Resources.resw" />
-	  <Content Remove="Strings\Resources.resw" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<AssemblyAttribute Include="BuildDateAttribute">

@@ -120,4 +120,22 @@
   <data name="AppName" xml:space="preserve">
     <value>UltimateSystemInfo</value>
   </data>
+  <data name="CPUText.Text" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="DeviceName.Text" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="FirmwareType.Text" xml:space="preserve">
+    <value>Firmware type</value>
+  </data>
+  <data name="OEMName.Text" xml:space="preserve">
+    <value>OEM</value>
+  </data>
+  <data name="RAMText.Text" xml:space="preserve">
+    <value>RAM</value>
+  </data>
+  <data name="RAMTypeText.Text" xml:space="preserve">
+    <value>RAM type</value>
+  </data>
 </root>

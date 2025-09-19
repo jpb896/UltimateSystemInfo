@@ -29,7 +29,7 @@ namespace UltimateSystemInfo
             About about = new About();
             ContentDialog aboutdialog = new ContentDialog();
             aboutdialog.DefaultButton = ContentDialogButton.Primary;
-            aboutdialog.PrimaryButtonText = "OK";
+            aboutdialog.PrimaryButtonText = new Microsoft.Windows.ApplicationModel.Resources.ResourceLoader().GetString("OK");
             aboutdialog.XamlRoot = rootGrid.XamlRoot;
             aboutdialog.Content = about;
             await aboutdialog.ShowAsync();
@@ -39,9 +39,9 @@ namespace UltimateSystemInfo
         {
             Changelog changelog = new Changelog();
             ContentDialog changelogDialog = new ContentDialog();
-            changelogDialog.Title = "What's New?";
+            changelogDialog.Title = new Microsoft.Windows.ApplicationModel.Resources.ResourceLoader().GetString("WhatsNew");
             changelogDialog.DefaultButton = ContentDialogButton.Primary;
-            changelogDialog.PrimaryButtonText = "OK";
+            changelogDialog.PrimaryButtonText = new Microsoft.Windows.ApplicationModel.Resources.ResourceLoader().GetString("OK");
             changelogDialog.XamlRoot = rootGrid.XamlRoot;
             changelogDialog.Content = changelog;
             await changelogDialog.ShowAsync();

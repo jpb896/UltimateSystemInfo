@@ -16,8 +16,8 @@
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Vertical">
                     <TextBlock FontSize="16" IsTextSelectionEnabled="True" x:Name="CompileDateText">Compilation date: March 9, 2025</TextBlock>
-                    <TextBlock FontSize="16" IsTextSelectionEnabled="True">©️ 2025 jpb, contributors</TextBlock>
-                    <TextBlock IsTextSelectionEnabled="True">Licensed under the <Bold>MIT License</Bold></TextBlock>
+                    <TextBlock FontSize="16" IsTextSelectionEnabled="True" x:Uid="Contributors"/>
+                    <TextBlock IsTextSelectionEnabled="True" x:Uid="LicenseNotice"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

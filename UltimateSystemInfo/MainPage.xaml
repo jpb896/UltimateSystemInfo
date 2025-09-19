@@ -37,7 +37,7 @@
             Stretch="Uniform" />
             </Grid>
             <StackPanel Orientation="Vertical">
-                <TextBlock FontWeight="SemiBold" FontSize="36" x:Name="DeviceName">Device</TextBlock>
+                <TextBlock FontWeight="SemiBold" FontSize="36" x:Name="DeviceName" x:Uid="DeviceName"/>
                 <TextBlock FontSize="16" x:Name="FirmwareType">UEFI</TextBlock>
             </StackPanel>
         </StackPanel>
@@ -46,14 +46,14 @@
                 <Button Style="{StaticResource TransparentButton}">
                     <StackPanel>
                         <Image/>
-                        <TextBlock FontSize="24" FontWeight="SemiBold">CPU</TextBlock>
+                        <TextBlock FontSize="24" FontWeight="SemiBold" x:Uid="CPUText"/>
                         <TextBlock x:Name="CPUName">f</TextBlock>
                     </StackPanel>
                 </Button>
                 <Button Style="{StaticResource TransparentButton}">
                     <StackPanel>
                         <Image/>
-                        <TextBlock FontSize="24" FontWeight="SemiBold">RAM</TextBlock>
+                        <TextBlock FontSize="24" FontWeight="SemiBold" x:Uid="RAMText"/>
                         <TextBlock x:Name="RAMSize">f</TextBlock>
                     </StackPanel>
                 </Button>
@@ -63,7 +63,7 @@
             <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
                 <StackPanel>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">CPU</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="CPUText"/>
                         <TextBlock x:Name="CPUModelText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                 </StackPanel>
@@ -71,11 +71,11 @@
             <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
                 <StackPanel>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">RAM</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="RAMText"/>
                         <TextBlock x:Name="RAMAmountText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">RAM type</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="RAMTypeText"/>
                         <TextBlock x:Name="RAMTypeText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                 </StackPanel>
@@ -83,15 +83,15 @@
             <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
                 <StackPanel>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">OEM</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="OEMName"/>
                         <TextBlock x:Name="OEMText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Device</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="DeviceName"/>
                         <TextBlock x:Name="DeviceText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Firmware type</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="FirmwareType"/>
                         <TextBlock x:Name="FirmwareText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                 </StackPanel>
@@ -99,11 +99,11 @@
             <Grid Background="{StaticResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{StaticResource CardStrokeColorDefaultBrush}" Padding="8" Margin="8" CornerRadius="8">
                 <StackPanel>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Windows edition</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="WindowsEdition"/>
                         <TextBlock x:Name="WinDesc" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Windows build</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="WindowsBuild"/>
                         <TextBlock x:Name="WinVer" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                 </StackPanel>
