@@ -14,7 +14,7 @@
             <RowDefinition Height="48"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TitleBar x:Name="TitleBar" Title="UltimateSystemInfo" Subtitle="v1.0.0" Grid.Row="0">
+        <TitleBar x:Name="TitleBar" Title="UltimateSystemInfo" Subtitle="v2.0.0" Grid.Row="0">
             <TitleBar.RightContent>
                 <Button Style="{StaticResource TransparentButton}" Click="Info">
                     <FontIcon Glyph="&#xE946;" FontSize="12"/>
