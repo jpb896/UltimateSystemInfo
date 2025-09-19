@@ -104,4 +104,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </PRIResource>
   </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Strings\pl\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Strings\ro\Resources.resw" />
+  </ItemGroup>
 </Project>
