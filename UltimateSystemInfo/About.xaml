@@ -10,7 +10,7 @@
         <StackPanel Padding="25">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <StackPanel>
-                    <TextBlock FontSize="36" Text="UltimateSystemInfo" Foreground="{StaticResource SystemAccentColor}"/>
+                    <TextBlock FontSize="36" Text="UltimateSystemInfo" Foreground="{StaticResource AccentAAFillColorDefaultBrush}"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
