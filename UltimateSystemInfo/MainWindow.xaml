@@ -17,7 +17,7 @@
         <TitleBar x:Name="TitleBar" Title="UltimateSystemInfo" Subtitle="v2.0.0" Grid.Row="0">
             <TitleBar.RightHeader>
                 <StackPanel Orientation="Horizontal">
-                    <Button Style="{StaticResource TransparentButton}" Click="Info">
+                    <Button Style="{StaticResource TransparentButton}" Click="AboutButton_Click">
                         <FontIcon Glyph="&#xE946;" FontSize="12"/>
                     </Button>
                     <Button Style="{StaticResource TransparentButton}" Click="ChangelogButton_Click">

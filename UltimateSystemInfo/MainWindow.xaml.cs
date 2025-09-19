@@ -1,10 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Controls;
@@ -30,7 +24,7 @@ namespace UltimateSystemInfo
             SetTitleBar(TitleBar);
         }
 
-        private async void Info(object sender, RoutedEventArgs e)
+        private async void AboutButton_Click(object sender, RoutedEventArgs e)
         {
             About about = new About();
             ContentDialog aboutdialog = new ContentDialog();

@@ -63,29 +63,17 @@ namespace UltimateSystemInfo
             string wallpaper = key.GetValue("Wallpaper").ToString();
 
             if (wallpaper.StartsWith("~"))
-
             {
-
                 desktopPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Web\Wallpaper\Windows", wallpaper.Substring(1));
-
             }
-
             else if (wallpaper.StartsWith("%"))
-
             {
-
                 string[] slides = wallpaper.Substring(1).Split(',');
-
                 desktopPath = slides[0].Trim();
-
             }
-
             else
-
             {
-
                 desktopPath = wallpaper;
-
             }
             return desktopPath;
         }
