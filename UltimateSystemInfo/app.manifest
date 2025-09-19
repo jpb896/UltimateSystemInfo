@@ -2,7 +2,7 @@
 <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
   <assemblyIdentity version="2.0.0.0" name="UltimateSystemInfo.app"/>
 
-  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+	<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- The ID below informs the system that this application is compatible with OS features first introduced in Windows 10. 
       It is necessary to support features in unpackaged applications, for example the custom titlebar implementation.
@@ -14,6 +14,7 @@
   <application xmlns="urn:schemas-microsoft-com:asm.v3">
     <windowsSettings>
       <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2</dpiAwareness>
-    </windowsSettings>
+	  <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
+	</windowsSettings>
   </application>
 </assembly>
