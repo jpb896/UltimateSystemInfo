@@ -14,6 +14,12 @@
 	  <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="Assets\Changelog\changelog.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Changelog.xaml" />
+  </ItemGroup>
 
 	<ItemGroup>
 		<AssemblyAttribute Include="BuildDateAttribute">
@@ -45,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.2.250402" />
+    <PackageReference Include="CommunityToolkit.WinUI.UI.Controls.Markdown" Version="7.1.2" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.4948" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.250907003" />
     <PackageReference Include="System.Management" Version="10.0.0-rc.1.25451.107" />
@@ -58,6 +65,12 @@
     <None Update="About.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="Assets\Changelog\changelog.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Page Update="Changelog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainPage.xaml">

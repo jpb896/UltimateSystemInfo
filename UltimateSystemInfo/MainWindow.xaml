@@ -16,9 +16,14 @@
         </Grid.RowDefinitions>
         <TitleBar x:Name="TitleBar" Title="UltimateSystemInfo" Subtitle="v2.0.0" Grid.Row="0">
             <TitleBar.RightHeader>
-                <Button Style="{StaticResource TransparentButton}" Click="Info">
-                    <FontIcon Glyph="&#xE946;" FontSize="12"/>
-                </Button>
+                <StackPanel Orientation="Horizontal">
+                    <Button Style="{StaticResource TransparentButton}" Click="Info">
+                        <FontIcon Glyph="&#xE946;" FontSize="12"/>
+                    </Button>
+                    <Button Style="{StaticResource TransparentButton}" Click="ChangelogButton_Click">
+                        <FontIcon Glyph="&#xEB78;" FontSize="12"/>
+                    </Button>
+                </StackPanel>
             </TitleBar.RightHeader>
         </TitleBar>
         <Frame x:Name="NavigationFrame" Grid.Row="1"/>

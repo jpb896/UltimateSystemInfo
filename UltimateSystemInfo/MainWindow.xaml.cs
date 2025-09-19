@@ -40,5 +40,17 @@ namespace UltimateSystemInfo
             aboutdialog.Content = about;
             await aboutdialog.ShowAsync();
         }
+
+        private async void ChangelogButton_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+        {
+            Changelog changelog = new Changelog();
+            ContentDialog changelogDialog = new ContentDialog();
+            changelogDialog.Title = "What's New?";
+            changelogDialog.DefaultButton = ContentDialogButton.Primary;
+            changelogDialog.PrimaryButtonText = "OK";
+            changelogDialog.XamlRoot = rootGrid.XamlRoot;
+            changelogDialog.Content = changelog;
+            await changelogDialog.ShowAsync();
+        }
     }
 }
