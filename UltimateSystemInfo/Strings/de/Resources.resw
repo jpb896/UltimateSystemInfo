@@ -121,42 +121,42 @@
     <value>UltimateSystemInfo</value>
   </data>
   <data name="BuildTime" xml:space="preserve">
-    <value>Compilat</value>
+    <value>Übersetzt</value>
   </data>
   <data name="Contributors.Text" xml:space="preserve">
-    <value>©️ 2025 jpb, alți colaboratori</value>
+    <value>©️ 2025 jpb, anderen Mitwirkenden</value>
   </data>
   <data name="CPUText.Text" xml:space="preserve">
-    <value>Procesor</value>
+    <value>Prozessor</value>
   </data>
   <data name="DeviceName.Text" xml:space="preserve">
-    <value>Dispositiv</value>
+    <value>Gerät</value>
   </data>
   <data name="FirmwareType.Text" xml:space="preserve">
-    <value>Tip de firmware</value>
+    <value>Firmwareart</value>
   </data>
   <data name="LicenseNotice.Text" xml:space="preserve">
-    <value>Programul este sub efectul de licentă MIT</value>
+    <value>Lizenziert unter die Softwarelizenz MIT</value>
   </data>
   <data name="OEMName.Text" xml:space="preserve">
-    <value>Producător</value>
+    <value>Produzent</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="RAMText.Text" xml:space="preserve">
-    <value>Memorie</value>
+    <value>Speicher</value>
   </data>
   <data name="RAMTypeText.Text" xml:space="preserve">
-    <value>Tip de memorie</value>
+    <value>Speicherart</value>
   </data>
   <data name="WhatsNew" xml:space="preserve">
-    <value>Care este nou?</value>
+    <value>Änderungsprotokoll</value>
   </data>
   <data name="WindowsBuild.Text" xml:space="preserve">
-    <value>Compilare de Windows</value>
+    <value>Windowsbuild</value>
   </data>
   <data name="WindowsEdition.Text" xml:space="preserve">
-    <value>Ediție de Windows</value>
+    <value>Windowsedition</value>
   </data>
 </root>
