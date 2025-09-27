@@ -67,15 +67,15 @@
                         <TextBlock x:Name="CPUModelText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Baseboard manufacturer</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="BoardVendor"/>
                         <TextBlock x:Name="BoardVendor" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Baseboard model</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="BoardModel"/>
                         <TextBlock x:Name="BoardVersion" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Baseboard firmware version</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="BoardVersion"/>
                         <TextBlock x:Name="BoardFirmware" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                 </StackPanel>
@@ -99,7 +99,7 @@
                         <TextBlock x:Name="OEMText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Device family</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="DeviceFamily"/>
                         <TextBlock x:Name="DeviceFamilyText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
@@ -107,15 +107,15 @@
                         <TextBlock x:Name="DeviceText" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Firmware vendor</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="FirmwareVendor"/>
                         <TextBlock x:Name="FirmwareVendor" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Firmware version</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="FirmwareVersion"/>
                         <TextBlock x:Name="FirmwareVersion" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold">Firmware release date</TextBlock>
+                        <TextBlock HorizontalAlignment="Left" FontWeight="Bold" x:Uid="FirmwareReleaseDate"/>
                         <TextBlock x:Name="FirmwareReleaseDate" HorizontalAlignment="Right">e</TextBlock>
                     </Grid>
                     <Grid>

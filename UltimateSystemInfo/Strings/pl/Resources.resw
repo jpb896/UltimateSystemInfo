@@ -120,6 +120,15 @@
   <data name="AppName" xml:space="preserve">
     <value>UltimateSystemInfo</value>
   </data>
+  <data name="BoardModel.Text" xml:space="preserve">
+    <value>Model płyty głównej</value>
+  </data>
+  <data name="BoardVendor.Text" xml:space="preserve">
+    <value>Producent płyty głównej</value>
+  </data>
+  <data name="BoardVersion.Text" xml:space="preserve">
+    <value>Wersja oprogramowania płyty głównej</value>
+  </data>
   <data name="BuildTime" xml:space="preserve">
     <value>Kompilowano</value>
   </data>
@@ -129,11 +138,23 @@
   <data name="CPUText.Text" xml:space="preserve">
     <value>Procesor</value>
   </data>
+  <data name="DeviceFamily.Text" xml:space="preserve">
+    <value>Linia</value>
+  </data>
   <data name="DeviceName.Text" xml:space="preserve">
     <value>Urządzenie</value>
   </data>
+  <data name="FirmwareReleaseDate.Text" xml:space="preserve">
+    <value>Data wydania oprogramowania</value>
+  </data>
   <data name="FirmwareType.Text" xml:space="preserve">
     <value>Typ oprogramowania</value>
+  </data>
+  <data name="FirmwareVendor.Text" xml:space="preserve">
+    <value>Deweloper oprogramowania</value>
+  </data>
+  <data name="FirmwareVersion.Text" xml:space="preserve">
+    <value>Wersja oprogramowania</value>
   </data>
   <data name="LicenseNotice.Text" xml:space="preserve">
     <value>Ten program podlega warunkom licencji MIT</value>
