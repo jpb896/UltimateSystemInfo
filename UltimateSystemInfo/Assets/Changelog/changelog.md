@@ -1,4 +1,4 @@
-﻿### UltimateSystemInfo v2.0.0, released September 27, 2025
+﻿### UltimateSystemInfo v2.0.0, released October 5, 2025
 - Based upon the .NET 10 runtime
 - Now uses WASDK 1.8
 - Introducing changelog support!
